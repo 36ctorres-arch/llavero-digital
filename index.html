@@ -6,89 +6,94 @@
 <title>Mi tarjeta digital</title>
 
 <style>
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #f5f1ea, #ffffff);
-    color: #333;
+    padding: 28px 16px;
+    font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    background: linear-gradient(160deg, #F4F8F2, #FFFFFF 55%, #E7F0E5);
+    color: #214E3D;
     text-align: center;
-}
-
-.contenedor {
-    max-width: 480px;
-    margin: auto;
     min-height: 100vh;
-    padding-bottom: 30px;
-}
-
-.portada {
-    padding: 40px 20px 30px;
 }
 
 .foto {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
-    border: 5px solid white;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-    background: #ddd;
+    border-radius: 50%;
+    border: 4px solid #D7E5D5;
+    box-shadow: 0 6px 20px rgba(33, 78, 61, 0.16);
+    margin: 8px auto 18px;
 }
 
 h1 {
-    margin: 20px 0 5px;
-    font-size: 30px;
+    color: #214E3D;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin: 12px 0 8px;
 }
 
 .subtitulo {
-    font-size: 17px;
-    margin-bottom: 25px;
-    color: #666;
-}
-
-.frase {
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 1.4;
-    margin: 20px 10px 30px;
+    color: #687D70;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    margin: 0 0 24px;
 }
 
 .boton {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    max-width: 380px;
+    min-height: 54px;
+    margin: 13px auto;
+    padding: 15px 22px;
+    border-radius: 999px;
+    background: #FFFFFF;
+    color: #214E3D;
+    border: 1px solid #D7E5D5;
+    box-shadow: 0 4px 12px rgba(33, 78, 61, 0.08);
     text-decoration: none;
-    color: #333;
-    background: white;
-    margin: 12px 20px;
-    padding: 16px;
-    border-radius: 14px;
-    font-size: 17px;
-    font-weight: bold;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transition: 0.2s;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .boton:hover {
-    transform: scale(1.02);
+    transform: translateY(-2px);
+    box-shadow: 0 7px 18px rgba(33, 78, 61, 0.14);
 }
 
 .whatsapp {
     background: #25D366;
-    color: white;
+    color: #FFFFFF;
+    border-color: #25D366;
 }
 
 .instagram {
-    background: linear-gradient(45deg, #f09433, #dc2743, #cc2366, #bc1888);
-    color: white;
+    background: #214E3D;
+    color: #FFFFFF;
+    border-color: #214E3D;
 }
 
 .pie {
-    margin-top: 30px;
-    font-size: 13px;
-    color: #888;
+    margin: 30px auto 10px;
+    color: #78877C;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
 }
 </style>
 </head>
