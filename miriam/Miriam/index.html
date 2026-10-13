@@ -4,21 +4,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#F8F1F8">
+<meta name="theme-color" content="#FFF5E9">
 <meta name="description" content="Tarjeta digital de Miriam Millaman. OMNILIFE y SEYTÚ.">
 <title>Miriam Millaman | OMNILIFE + SEYTÚ</title>
 
 <style>
 :root {
-    --fondo: #F8F1F8;
-    --crema: #FFFAF7;
-    --lavanda: #E8DCEC;
-    --rosa: #F3E1E9;
-    --verde: #E7F0E7;
-    --verde-texto: #56715C;
-    --texto: #685969;
-    --borde: #E7DCE8;
-    --lila: #A58BA8;
+    --fondo: #FFF5E9;
+    --crema: #FFFAF5;
+    --naranja: #F6D6C2;
+    --terracota: #D9A18C;
+    --terracota-claro: #F3E0D5;
+    --marron: #80594F;
+    --marron-suave: #A47D70;
+    --verde: #E8EEE4;
+    --verde-texto: #53664F;
+    --borde: #EAD2C5;
 }
 
 * {
@@ -30,9 +31,9 @@ body {
     padding: 30px 16px 24px;
     min-height: 100vh;
     background:
-        radial-gradient(ellipse at top, #F0E5F2 0%, transparent 60%),
-        linear-gradient(145deg, #FFF9F5, #F5EEF8 55%, #F9EDF2);
-    color: var(--texto);
+        radial-gradient(ellipse at top, #FBE6D8 0%, transparent 58%),
+        linear-gradient(145deg, #FFFAF5, #FFF1E6 55%, #F7E7E0);
+    color: var(--marron);
     text-align: center;
     font-family: "Segoe UI", Arial, sans-serif;
 }
@@ -46,10 +47,14 @@ body {
 .portada {
     padding: 28px 20px 22px;
     margin-bottom: 20px;
-    background: rgba(255, 250, 247, 0.88);
+    background: linear-gradient(
+        145deg,
+        rgba(255, 250, 245, 0.97),
+        rgba(246, 214, 194, 0.58)
+    );
     border: 1px solid var(--borde);
     border-radius: 26px;
-    box-shadow: 0 15px 38px rgba(112, 87, 115, 0.12);
+    box-shadow: 0 15px 38px rgba(128, 89, 79, 0.12);
 }
 
 .foto {
@@ -59,14 +64,14 @@ body {
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
-    border: 4px solid #FFFFFF;
-    outline: 2px solid #DCCBE0;
-    box-shadow: 0 8px 24px rgba(112, 87, 115, 0.16);
+    border: 4px solid #FFFAF5;
+    outline: 2px solid var(--terracota);
+    box-shadow: 0 8px 24px rgba(128, 89, 79, 0.16);
     margin: 4px auto 22px;
 }
 
 h1 {
-    color: #806681;
+    color: var(--marron);
     font-size: 27px;
     font-weight: 700;
     letter-spacing: 1.4px;
@@ -75,7 +80,7 @@ h1 {
 }
 
 .subtitulo {
-    color: #9A829C;
+    color: var(--marron-suave);
     font-size: 12px;
     letter-spacing: 1.2px;
     line-height: 1.9;
@@ -84,11 +89,11 @@ h1 {
 
 .frase {
     padding-top: 14px;
-    border-top: 1px solid #E1D2E3;
+    border-top: 1px solid #E5C4B4;
 }
 
 .frase h2 {
-    color: #A58BA8;
+    color: #B77E68;
     font-size: 21px;
     letter-spacing: 5px;
     margin: 8px 0 4px;
@@ -104,11 +109,11 @@ h1 {
     min-height: 58px;
     margin: 13px auto;
     padding: 14px 19px;
-    background: rgba(255, 250, 247, 0.86);
-    color: #705A71;
-    border: 1px solid #E4D6E7;
+    background: rgba(255, 250, 245, 0.94);
+    color: var(--marron);
+    border: 1px solid var(--borde);
     border-radius: 17px;
-    box-shadow: 0 5px 14px rgba(112, 87, 115, 0.08);
+    box-shadow: 0 5px 14px rgba(128, 89, 79, 0.08);
     text-decoration: none;
     font-size: 15px;
     font-weight: 600;
@@ -118,42 +123,47 @@ h1 {
 
 .boton:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 19px rgba(112, 87, 115, 0.14);
+    box-shadow: 0 8px 19px rgba(128, 89, 79, 0.14);
 }
 
+/* WHATSAPP: VERDE SUAVE */
 .whatsapp {
-    background: #E7F0E7;
-    color: #56715C;
-    border-color: #D5E4D5;
+    background: var(--verde);
+    color: var(--verde-texto);
+    border-color: #D2DFCC;
 }
 
+/* INSTAGRAM: ROSA TERRACOTA */
 .instagram {
-    background: #F5E7EF;
-    color: #916D86;
-    border-color: #EBD6E1;
+    background: #F6E4DB;
+    color: #945F50;
+    border-color: #EBCDBD;
 }
 
+/* FACEBOOK: CREMA CÁLIDO */
 .facebook {
-    background: #EDF0F8;
-    color: #647596;
-    border-color: #DCE2EF;
+    background: #FFF1E5;
+    color: #80594F;
+    border-color: #EAD6C7;
 }
 
+/* WEB COMPAÑÍA: NARANJA PASTEL */
 .web {
-    background: #EAE7F4;
-    color: #76678F;
-    border-color: #DCD5EA;
+    background: #F6D6C2;
+    color: #80594F;
+    border-color: #E9C1AA;
 }
 
+/* CATÁLOGO: TERRACOTA SUAVE */
 .catalogo {
-    background: #F5EAF0;
-    color: #896C81;
-    border-color: #EBD9E3;
+    background: #E8BDA9;
+    color: #70483D;
+    border-color: #D9A18C;
 }
 
 .pie {
     margin: 28px auto 10px;
-    color: #A18DA2;
+    color: var(--marron-suave);
     font-size: 10px;
     letter-spacing: 1px;
     line-height: 1.8;
