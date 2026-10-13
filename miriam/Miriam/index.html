@@ -1,118 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi tarjeta digital</title>
 
+<style>
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    padding: 24px 14px;
-    font-family: "Segoe UI", Arial, sans-serif;
-    color: #66515F;
-    background: linear-gradient(135deg, #FFF9F5, #F6EFF8, #FBEFF1);
-    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f1ea, #ffffff);
+    color: #333;
+    text-align: center;
 }
 
 .contenedor {
-    max-width: 440px;
-    margin: 0 auto;
-    padding: 30px 22px;
-    text-align: center;
-    background: rgba(255, 252, 250, 0.94);
-    border: 1px solid #EADDE8;
-    border-radius: 28px;
-    box-shadow: 0 12px 35px rgba(125, 94, 118, 0.12);
+    max-width: 480px;
+    margin: auto;
+    min-height: 100vh;
+    padding-bottom: 30px;
 }
 
 .portada {
-    margin-bottom: 24px;
+    padding: 40px 20px 30px;
 }
 
 .foto {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
-    border: 5px solid #E8D8E8;
-    box-shadow: 0 5px 18px rgba(125, 94, 118, 0.16);
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    background: #ddd;
 }
 
 h1 {
-    margin: 18px 0 8px;
-    color: #84657F;
+    margin: 20px 0 5px;
     font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 1px;
 }
 
 .subtitulo {
-    color: #A18AA0;
-    font-size: 15px;
-    line-height: 1.7;
-    letter-spacing: 1px;
+    font-size: 17px;
+    margin-bottom: 25px;
+    color: #666;
 }
 
 .frase {
-    margin: 22px 0 28px;
-    color: #796878;
-    font-size: 17px;
-    line-height: 1.6;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 20px 10px 30px;
 }
 
 .boton {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    width: 100%;
-    margin: 12px 0;
-    padding: 15px 17px;
-    border: 1px solid #E8DCE8;
-    border-radius: 18px;
-    background: #F7EFF7;
-    color: #71596D;
-    font-size: 16px;
-    font-weight: 600;
+    display: block;
     text-decoration: none;
-    box-shadow: 0 4px 10px rgba(125, 94, 118, 0.07);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: #333;
+    background: white;
+    margin: 12px 20px;
+    padding: 16px;
+    border-radius: 14px;
+    font-size: 17px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.2s;
 }
 
 .boton:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 7px 16px rgba(125, 94, 118, 0.13);
+    transform: scale(1.02);
 }
 
 .whatsapp {
-    background: #E8F1E8;
-    border-color: #D5E5D5;
-    color: #56735C;
+    background: #25D366;
+    color: white;
 }
 
 .instagram {
-    background: #F5E5EC;
-    border-color: #EBD1DE;
-    color: #93677F;
+    background: linear-gradient(45deg, #f09433, #dc2743, #cc2366, #bc1888);
+    color: white;
 }
 
 .pie {
-    margin-top: 28px;
-    color: #A18AA0;
-    font-size: 11px;
-    letter-spacing: 1.5px;
-    line-height: 1.6;
+    margin-top: 30px;
+    font-size: 13px;
+    color: #888;
 }
+</style>
+</head>
 
-@media (max-width: 380px) {
-    .contenedor {
-        padding: 24px 16px;
-    }
+<body>
 
-    h1 {
-        font-size: 25px;
-    }
+<div class="contenedor">
 
-    .boton {
-        padding: 13px;
-        font-size: 14px;
-    }
-}
+    <div class="portada">
+
+      <img src="MIRY.jpg" class="foto" alt="Foto de Miriam">
+
+
+        <h1>MIRIAM MILLAMAN</h1>
+
+        <div class="subtitulo">
+            DISTRIBUIDOR INDEPENDIENTE · OMNILIFE + SEYTÚ
+        </div>
+
+        <div class="frase">
+            Contacteme y hagamos crecer nuevas oportunidades.
+        </div>
+
+    </div>
+
+    <a class="boton whatsapp"
+       href="https://wa.me/542995399926"
+       target="_blank">
+       🟢 WhatsApp
+    </a>
+
+    <a class="boton"
+       href="tel:+542995399926">
+       📞 Llamarme
+    </a>
+
+    <a class="boton instagram"
+       href="https://www.instagram.com/miriamillaman_emprendedora?utm_source=qr&igsh=bWI2dXpjdmlrNzRn"
+       target="_blank">
+       📸 Instagram
+    </a>
+
+    <a class="boton"
+       href="https://empresario.omnilife.com/ar/neuquen/centenario/2995399926/miriam-millaman-gonzales/omnilife"
+       target="_blank">
+       🌐 WEB
+    </a>
+  
+        <a class="boton"
+       href="https://www.facebook.com/share/1Bq54SYsJi/"
+       target="_blank" rel="noopener noreferrer">
+       📘 Facebook
+    </a>
+  
+    <a class="boton"
+       href="../Catalogo_SEYTU_Argentina.pdf.pdf"
+       target="_blank">
+       📖 Ver catálogo
+    </a>
+
+    <div class="pie">
+        Tarjeta digital · Contacto profesional
+    </div>
+
+</div>
+
+</body>
+
