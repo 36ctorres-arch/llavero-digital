@@ -4,11 +4,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Miriam Millaman | Tarjeta Digital</title>
-
 <meta name="theme-color" content="#F8F1F8">
-<meta name="description" content="Contactá a Miriam Millaman, distribuidora independiente de OMNILIFE y SEYTÚ.">
+<meta name="description" content="Tarjeta digital de Miriam Millaman. OMNILIFE y SEYTÚ.">
+<title>Miriam Millaman | OMNILIFE + SEYTÚ</title>
 
 <style>
 :root {
@@ -16,109 +14,84 @@
     --crema: #FFFAF7;
     --lavanda: #E8DCEC;
     --rosa: #F3E1E9;
-    --rosa-suave: #F9EDF2;
     --verde: #E7F0E7;
     --verde-texto: #56715C;
-    --lila: #A58BA8;
-    --marron: #796579;
     --texto: #685969;
     --borde: #E7DCE8;
-    --sombra: rgba(112, 87, 115, 0.12);
+    --lila: #A58BA8;
 }
 
 * {
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     margin: 0;
-    padding: 28px 14px;
+    padding: 30px 16px 24px;
     min-height: 100vh;
-    font-family: "Segoe UI", Arial, sans-serif;
-    color: var(--texto);
     background:
-        radial-gradient(ellipse at top left, #F4E8F4, transparent 55%),
+        radial-gradient(ellipse at top, #F0E5F2 0%, transparent 60%),
         linear-gradient(145deg, #FFF9F5, #F5EEF8 55%, #F9EDF2);
+    color: var(--texto);
+    text-align: center;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
 
 .contenedor {
     width: 100%;
-    max-width: 440px;
+    max-width: 460px;
     margin: 0 auto;
-    padding: 30px 23px;
-    text-align: center;
-    background: rgba(255, 250, 247, 0.94);
-    border: 1px solid #E9DDE9;
-    border-radius: 28px;
-    box-shadow: 0 14px 40px var(--sombra);
 }
 
 .portada {
-    margin-bottom: 22px;
+    padding: 28px 20px 22px;
+    margin-bottom: 20px;
+    background: rgba(255, 250, 247, 0.88);
+    border: 1px solid var(--borde);
+    border-radius: 26px;
+    box-shadow: 0 15px 38px rgba(112, 87, 115, 0.12);
 }
 
 .foto {
     display: block;
     width: 150px;
     height: 150px;
-    margin: 0 auto;
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
-    border: 5px solid white;
-    outline: 2px solid var(--lavanda);
-    box-shadow: 0 7px 20px var(--sombra);
+    border: 4px solid #FFFFFF;
+    outline: 2px solid #DCCBE0;
+    box-shadow: 0 8px 24px rgba(112, 87, 115, 0.16);
+    margin: 4px auto 22px;
 }
 
 h1 {
-    margin: 23px 0 8px;
     color: #806681;
-    font-size: clamp(25px, 7vw, 31px);
+    font-size: 27px;
     font-weight: 700;
-    letter-spacing: 1px;
-    line-height: 1.2;
+    letter-spacing: 1.4px;
+    line-height: 1.3;
+    margin: 10px 0;
 }
 
 .subtitulo {
-    margin: 0;
     color: #9A829C;
-    font-size: 14px;
-    line-height: 1.8;
-    letter-spacing: 1.5px;
-}
-
-.separador {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    margin: 22px 0;
-    color: #B69AB7;
-}
-
-.separador::before,
-.separador::after {
-    content: "";
-    width: 70px;
-    height: 1px;
-    background: #DDCCDF;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    line-height: 1.9;
+    margin: 0 0 20px;
 }
 
 .frase {
-    margin: 0 0 27px;
-    color: #796879;
-    font-size: 17px;
-    line-height: 1.7;
+    padding-top: 14px;
+    border-top: 1px solid #E1D2E3;
 }
 
-.botones {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.frase h2 {
+    color: #A58BA8;
+    font-size: 21px;
+    letter-spacing: 5px;
+    margin: 8px 0 4px;
 }
 
 .boton {
@@ -127,105 +100,72 @@ h1 {
     justify-content: space-between;
     gap: 12px;
     width: 100%;
-    min-height: 62px;
-    padding: 12px 15px;
+    max-width: 390px;
+    min-height: 58px;
+    margin: 13px auto;
+    padding: 14px 19px;
+    background: rgba(255, 250, 247, 0.86);
     color: #705A71;
-    background: #F2E8F3;
     border: 1px solid #E4D6E7;
-    border-radius: 18px;
-    text-align: left;
+    border-radius: 17px;
+    box-shadow: 0 5px 14px rgba(112, 87, 115, 0.08);
     text-decoration: none;
     font-size: 15px;
     font-weight: 600;
-    box-shadow: 0 4px 12px rgba(112, 87, 115, 0.07);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     -webkit-tap-highlight-color: transparent;
 }
 
 .boton:hover {
     transform: translateY(-2px);
-    box-shadow: 0 7px 17px rgba(112, 87, 115, 0.14);
-}
-
-.boton:focus-visible {
-    outline: 3px solid #BDA7C3;
-    outline-offset: 3px;
-}
-
-.icono {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    width: 38px;
-    height: 38px;
-    border-radius: 13px;
-    background: rgba(255, 255, 255, 0.7);
-    font-size: 19px;
-}
-
-.nombre-boton {
-    flex: 1;
-}
-
-.flecha {
-    flex-shrink: 0;
-    font-size: 22px;
-    font-weight: 400;
+    box-shadow: 0 8px 19px rgba(112, 87, 115, 0.14);
 }
 
 .whatsapp {
-    background: var(--verde);
+    background: #E7F0E7;
+    color: #56715C;
     border-color: #D5E4D5;
-    color: var(--verde-texto);
-}
-
-.llamada {
-    background: #F5EFF7;
 }
 
 .instagram {
-    background: var(--rosa);
-    border-color: #EBD6E1;
+    background: #F5E7EF;
     color: #916D86;
-}
-
-.web {
-    background: #EAE7F4;
-    border-color: #DCD5EA;
-    color: #76678F;
+    border-color: #EBD6E1;
 }
 
 .facebook {
     background: #EDF0F8;
-    border-color: #DCE2EF;
     color: #647596;
+    border-color: #DCE2EF;
+}
+
+.web {
+    background: #EAE7F4;
+    color: #76678F;
+    border-color: #DCD5EA;
 }
 
 .catalogo {
     background: #F5EAF0;
-    border-color: #EBD9E3;
     color: #896C81;
+    border-color: #EBD9E3;
 }
 
 .pie {
-    margin-top: 28px;
-    padding-top: 17px;
-    border-top: 1px solid var(--borde);
+    margin: 28px auto 10px;
     color: #A18DA2;
     font-size: 10px;
+    letter-spacing: 1px;
     line-height: 1.8;
-    letter-spacing: 1.5px;
 }
 
 @media (max-width: 380px) {
     body {
-        padding: 16px 10px;
+        padding: 20px 12px;
     }
 
-    .contenedor {
-        padding: 24px 15px;
-        border-radius: 23px;
+    .portada {
+        padding: 23px 15px 18px;
     }
 
     .foto {
@@ -233,124 +173,84 @@ h1 {
         height: 130px;
     }
 
-    .boton {
-        min-height: 58px;
-        padding: 10px 12px;
-        font-size: 14px;
+    h1 {
+        font-size: 24px;
     }
-}
 
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        scroll-behavior: auto !important;
-        transition: none !important;
+    .boton {
+        padding: 13px 14px;
+        font-size: 14px;
     }
 }
 </style>
 </head>
 
 <body>
-
-<main class="contenedor">
+<div class="contenedor">
 
     <header class="portada">
-
         <img
             src="../../MIRY.jpg.jpeg"
             class="foto"
             alt="Foto de Miriam Millaman"
-            onerror="this.style.display='none'"
         >
 
-        <h1>Miriam Millaman</h1>
+        <h1>MIRIAM MILLAMAN</h1>
 
-        <p class="subtitulo">
+        <div class="subtitulo">
             EMPRESARIA INDEPENDIENTE<br>
             OMNILIFE + SEYTÚ
-        </p>
+        </div>
 
+        <div class="frase">
+            <h2>VISIONARY</h2>
+        </div>
     </header>
 
-    <div class="separador" aria-hidden="true">♡</div>
+    <nav aria-label="Mis contactos">
 
-    <p class="frase">
-        VISIONARY
-    </p>
-
-    <nav class="botones" aria-label="Mis contactos">
-
-        <a
-            class="boton whatsapp"
-            href="https://wa.me/542995399926"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <span class="icono">☏</span>
-            <span class="nombre-boton">WhatsApp</span>
-            <span class="flecha">→</span>
-        </a>
-
-        <a class="boton llamada" href="tel:+542995399926">
-            <span class="icono">☎</span>
-            <span class="nombre-boton">Llamarme</span>
-            <span class="flecha">→</span>
-        </a>
-
-        <a
-            class="boton instagram"
-            href="https://www.instagram.com/miriamillaman_emprendedora/"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <span class="icono">◎</span>
-            <span class="nombre-boton">Instagram</span>
-            <span class="flecha">→</span>
-        </a>
-
-        <a
-            class="boton web"
-            href="https://empresario.omnilife.com/ar/neuquen/centenario/2995399926/miriam-millaman-gonzales/omnilife"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <span class="icono">⌘</span>
-            <span class="nombre-boton">Web OMNILIFE</span>
-            <span class="flecha">→</span>
-        </a>
-
-        <a
-            class="boton facebook"
-            href="https://www.facebook.com/share/1Bq54SYsJi/"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <span class="icono">f</span>
-            <span class="nombre-boton">Facebook</span>
-            <span class="flecha">→</span>
+        <a class="boton whatsapp"
+           href="https://wa.me/542995399926"
+           target="_blank" rel="noopener noreferrer">
+           <span>🟢 WhatsApp</span><span>↗</span>
         </a>
 
         <a class="boton"
-       href="Catalogo_SEYTU_Argentina.pdf.pdf"
-       target="_blank" rel="noopener noreferrer">
-       <span>📖 Ver catálogo</span><span>↗</span>
-    </a>
-            <span class="icono">▤</span>
-            <span class="nombre-boton">Ver catálogo SEYTÚ</span>
-            <span class="flecha">→</span>
+           href="tel:+542995399926">
+           <span>📞 Llamarme</span><span>↗</span>
+        </a>
+
+        <a class="boton instagram"
+           href="https://www.instagram.com/miriamillaman_emprendedora/"
+           target="_blank" rel="noopener noreferrer">
+           <span>📸 Instagram</span><span>↗</span>
+        </a>
+
+        <a class="boton facebook"
+           href="https://www.facebook.com/share/1Bq54SYsJi/"
+           target="_blank" rel="noopener noreferrer">
+           <span>📘 Facebook</span><span>↗</span>
+        </a>
+
+        <a class="boton web"
+           href="https://empresario.omnilife.com/ar/neuquen/centenario/2995399926/miriam-millaman-gonzales/omnilife"
+           target="_blank" rel="noopener noreferrer">
+           <span>🌐 WEB COMPAÑÍA</span><span>↗</span>
+        </a>
+
+        <a class="boton catalogo"
+           href="../../Catalogo_SEYTU_Argentina.pdf.pdf"
+           target="_blank" rel="noopener noreferrer">
+           <span>📖 Ver catálogo SEYTÚ</span><span>↗</span>
         </a>
 
     </nav>
 
     <footer class="pie">
-        TARJETA DIGITAL<br>
-        CONTACTO PROFESIONAL · OMNILIFE + SEYTÚ
+        TARJETA DIGITAL · CONTACTO PROFESIONAL<br>
+        OMNILIFE + SEYTÚ
     </footer>
 
-</main>
-
+</div>
 </body>
 </html>
-
-</body>
